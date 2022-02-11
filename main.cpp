@@ -93,43 +93,82 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-float marathonFinishTine(int numberOfTrinaingSession, float numberOfTrainingMiles, bool newRunningShoes);
+float marathonFinishTime(int numberOfTrianingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
+{
+    ignoreUnused(numberOfTrianingSessions, numberOfTrainingMiles, newRunningShoes);
+    return {};
+}
 /*
  2)
  */
-bool married(bool havePatner, float yearsTogether, bool proposed, double venueCost);
+bool married(bool havePartner, float yearsTogether, bool proposed = true, double venueCost = 5555.55)
+{
+    ignoreUnused(havePartner, yearsTogether, proposed, venueCost);
+    return {};
+}
 /*
  3)
  */
-double schoolPerformance(int students, float averageGrade, int teachers, bool sportsProgramme);
+double schoolPerformance(int students, float averageGrade, int teachers = 51, bool sportsProgramme = true)
+{
+    ignoreUnused(students, averageGrade, teachers, sportsProgramme);
+    return {};
+}
 /*
  4)
  */
-float restaurantBillShare(int numberOfDiners, float foodCost, float drinkCost, bool serviceGood, char country, double acceptableTip);
+float restaurantBillShare(int numberOfDiners =12, float foodCost = 1234.56f, float drinkCost = 569.99f, bool serviceGood = false, char country = 'e', double acceptableTip = 0.075)
+{
+    ignoreUnused(numberOfDiners, foodCost, drinkCost, serviceGood, country, acceptableTip);
+    return {};
+}
 /*
  5)
  */
-double stressLevel(bool doSport, int numberOfChildren, bool didSchoolRun, float income, bool happyWithJob, int numberOfFriends);
+double stressLevel(bool doSport = false, int numberOfChildren = 5, bool didSchoolRun = true, double income = 45678.23, bool happyWithJob = false, int numberOfFriends = 4)
+{
+    ignoreUnused(doSport, numberOfChildren, didSchoolRun, income, happyWithJob, numberOfFriends);
+    return {};
+}
 /*
  6)
  */
-bool buySecondHandCar(int numberOfSeats, char colour, float engineSize, char manufacturer, float milage, bool acceptTradeIn);
+bool buySecondHandCar(int numberOfSeats, char colour, float engineSize, char manufacturer = 'b', double milage = 123456.78, bool acceptTradeIn = false)
+{
+    ignoreUnused(numberOfSeats, colour, engineSize, manufacturer, milage, acceptTradeIn);
+    return {};
+}
 /*
  7)
  */
-bool winFishingCompetition(int fishCaught, weightOf)
+bool winFishingCompetition(int fishCaught, float totalWeightCaught, bool biggestCatchOfTheDay = true, float hoursFishing = 13.78f)
+{
+    ignoreUnused(fishCaught, totalWeightCaught, biggestCatchOfTheDay, hoursFishing);
+    return {};
+}
 /*
  8)
  */
-
+void babyBedTime(float timeInbath, bool pyjamasOn = true, int numberOfStoires = 3, bool nightLightOn = true)
+{
+    ignoreUnused(timeInbath, pyjamasOn, numberOfStoires, nightLightOn);
+}
 /*
  9)
  */
-
+bool makeFishAndChips(float fishWeight, int numberOfChips = 30, bool salt = true, float vinegarInMl = 20.5f, bool mushyPeas = true)
+{
+    ignoreUnused(fishWeight, numberOfChips, salt, vinegarInMl, mushyPeas);
+    return {};
+}
 /*
  10)
  */
-
+float jewelleryValue(int numberOfRing = 5, int numberOfNecklaces = 3, int numberOfBraclets = 1, bool gold = true, bool silver = false, float totalWeightRings = 34.56f, float totalWeightNecklaces = 11.11f, float totalWeightBraclets = 9.87f)
+{
+    ignoreUnused(numberOfRing, numberOfNecklaces, numberOfBraclets, gold, silver, totalWeightRings, totalWeightNecklaces, totalWeightBraclets);
+    return {};
+}
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
@@ -150,25 +189,25 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    
+    auto runTime = marathonFinishTime(56, 678.91f, true);
     //2)
-    
+    auto ballAndChain = married(true, 5.7f, true, 8967.78);
     //3)
-    
+    auto schoolLeaugueTablePosition = schoolPerformance(1103, 3.67f, 66, false);
     //4)
-    
+    auto myShareOfFoodBill = restaurantBillShare(8, 555.55f, 890.76f, true, 'i', 0.125);
     //5)
-    
+    auto heartAttackRisk = stressLevel(true, 1, false, 98789.76, true, 35);
     //6)
-    
+    auto buyCar = buySecondHandCar(4, 'r', 2222.22f, 'm', 5678.78, true);
     //7)
-    
+    auto braggingRights = winFishingCompetition(22, 67.89f, true, 8.96f);
     //8)
-    
+    babyBedTime(10.3f, false, 2, false);
     //9)
-    
+    auto succesfulFridayNight = makeFishAndChips(200.45f, 40, true, 10.3, true);
     //10)
-    
+    auto insuranceValue = jewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
     
     ignoreUnused(carRented);
     std::cout << "good to go!" << std::endl;
