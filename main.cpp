@@ -16,12 +16,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- 
- 
- 
- 
- 
- 
+ void
+ int
+ float
+ double
+ char
+ bool
+ //wchar_t
  
  
  
@@ -59,10 +60,23 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
-    
+    int age = 40;
+    int heightInCm = 188;
+    int numberOfChildren = 1;
+    float pi = 3.14159f;
+    float e = 2.71826f;
+    float root2 = 1.41421f;
+    double carMilage = 1334.56;
+    double carValue = 16735.78;
+    double carEngineCapacity = 2238.10;
+    char firstInitial = 'j';
+    char middleInitial = 'm';
+    char lastInitial = 'h';
+    bool married = false;
+    bool happy = true;
+    bool hungry = true;
 
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(number, age, heightInCm, numberOfChildren, pi, e, root2, carMilage, carValue, carEngineCapacity, firstInitial, middleInitial, lastInitial, married, happy, hungry); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -79,31 +93,31 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-
+float marathonFinishTine(int numberOfTrinaingSession, float numberOfTrainingMiles, bool newRunningShoes);
 /*
  2)
  */
-
+bool married(bool havePatner, float yearsTogether, bool proposed, double venueCost);
 /*
  3)
  */
-
+double schoolPerformance(int students, float averageGrade, int teachers, bool sportsProgramme);
 /*
  4)
  */
-
+float restaurantBillShare(int numberOfDiners, float foodCost, float drinkCost, bool serviceGood, char country, double acceptableTip);
 /*
  5)
  */
-
+double stressLevel(bool doSport, int numberOfChildren, bool didSchoolRun, float income, bool happyWithJob, int numberOfFriends);
 /*
  6)
  */
-
+bool buySecondHandCar(int numberOfSeats, char colour, float engineSize, char manufacturer, float milage, bool acceptTradeIn);
 /*
  7)
  */
-
+bool winFishingCompetition(int fishCaught, weightOf)
 /*
  8)
  */
