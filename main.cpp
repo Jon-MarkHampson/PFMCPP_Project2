@@ -16,13 +16,13 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
- void
- int
- float
- double
- char
- bool
- //wchar_t
+ 1. void
+ 2. int
+ 3. float
+ 4. double
+ 5. char
+ 6. bool
+
  
  
  
@@ -189,7 +189,7 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto runTime = marathonFinishTime(56, 678.91f, true);
+    auto poistionAfterRace = marathonFinishTime(56, 678.91f, true);
     //2)
     auto ballAndChain = married(true, 5.7f, true, 8967.78);
     //3)
@@ -205,11 +205,11 @@ int main()
     //8)
     babyBedTime(10.3f, false, 2, false);
     //9)
-    auto succesfulFridayNight = makeFishAndChips(200.45f, 40, true, 10.3, true);
+    auto succesfulFridayNight = makeFishAndChips(200.45f, 40, true, 10.3f, true);
     //10)
     auto insuranceValue = jewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
     
-    ignoreUnused(carRented);
+    ignoreUnused(carRented, poistionAfterRace, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, babyBedTime, succesfulFridayNight, insuranceValue);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
