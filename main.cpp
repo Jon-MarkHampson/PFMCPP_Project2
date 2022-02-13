@@ -101,7 +101,7 @@ float timeRunningMarathon(int numberOfTrianingSessions, float numberOfTrainingMi
 /*
  2)
  */
-bool becomeMarried(bool havePartner, float yearsTogether, bool proposed = true, double venueCost = 5555.55)
+bool becomingMarried(bool havePartner, float yearsTogether, bool proposed = true, double venueCost = 5555.55)
 {
     ignoreUnused(havePartner, yearsTogether, proposed, venueCost);
     return {};
@@ -141,7 +141,7 @@ bool buySecondHandCar(int numberOfSeats, char colour, float engineSize, char man
 /*
  7)
  */
-bool winFishingCompetition(int fishCaught, float totalWeightCaught, bool biggestCatchOfTheDay = true, float hoursFishing = 13.78f)
+bool fishing(int fishCaught, float totalWeightCaught, bool biggestCatchOfTheDay = true, float hoursFishing = 13.78f)
 {
     ignoreUnused(fishCaught, totalWeightCaught, biggestCatchOfTheDay, hoursFishing);
     return {};
@@ -149,14 +149,15 @@ bool winFishingCompetition(int fishCaught, float totalWeightCaught, bool biggest
 /*
  8)
  */
-bool IsTheBabyAsleep(float timeInbath, bool pyjamasOn = true, int numberOfStoires = 3, bool nightLightOn = true)
+bool IsTheBabySleeping(float timeInbath, bool pyjamasOn = true, int numberOfStories = 3, bool nightLightOn = true)
 {
-    ignoreUnused(timeInbath, pyjamasOn, numberOfStoires, nightLightOn);
+    ignoreUnused(timeInbath, pyjamasOn, numberOfStories, nightLightOn);
+    return {};
 }
 /*
  9)
  */
-bool makeFishAndChips(float fishWeight, int numberOfChips = 30, bool salt = true, float vinegarInMl = 20.5f, bool mushyPeas = true)
+bool eatingFishAndChips(float fishWeight, int numberOfChips = 30, bool salt = true, float vinegarInMl = 20.5f, bool mushyPeas = true)
 {
     ignoreUnused(fishWeight, numberOfChips, salt, vinegarInMl, mushyPeas);
     return {};
@@ -189,9 +190,9 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto poistionAfterRace = timeRunningMarathon(56, 678.91f, true);
+    auto positionAfterRace  = timeRunningMarathon(34, 555.55f, true);
     //2)
-    auto ballAndChain = becomeMarried(true, 5.7f, true, 8967.78);
+    auto ballAndChain = becomingMarried(true, 5.7f, true, 8967.78);
     //3)
     auto schoolLeaugueTablePosition = calculateSchoolPerformance(1103, 3.67f, 66, false);
     //4)
@@ -201,15 +202,15 @@ int main()
     //6)
     auto buyCar = buySecondHandCar(4, 'r', 2222.22f, 'm', 5678.78, true);
     //7)
-    auto braggingRights = winFishingCompetition(22, 67.89f, true, 8.96f);
+    auto braggingRights = fishing(22, 67.89f, true, 8.96f);
     //8)
-    bool happyParent = IsTheBabyAsleep(10.3f, false, 2, false);
+    bool happyParent = IsTheBabySleeping(10.3f, false, 2, false);
     //9)
-    auto succesfulFridayNight = makeFishAndChips(200.45f, 40, true, 10.3f, true);
+    auto succesfulFridayNight = eatingFishAndChips(200.45f, 40, true, 10.3f, true);
     //10)
     auto insuranceValue = CalculateJewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
     
-    ignoreUnused(carRented, timeRunningMarathon, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, happyParent, succesfulFridayNight, insuranceValue);
+    ignoreUnused(carRented, positionAfterRace, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, happyParent, succesfulFridayNight, insuranceValue);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
