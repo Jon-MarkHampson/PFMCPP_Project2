@@ -141,7 +141,7 @@ bool buySecondHandCar(int numberOfSeats, char colour, float engineSize, char man
 /*
  7)
  */
-bool fishing(int fishCaught, float totalWeightCaught, bool biggestCatchOfTheDay = true, float hoursFishing = 13.78f)
+bool goFishing(int fishCaught, float totalWeightCaught, bool biggestCatchOfTheDay = true, float hoursFishing = 13.78f)
 {
     ignoreUnused(fishCaught, totalWeightCaught, biggestCatchOfTheDay, hoursFishing);
     return {};
@@ -202,7 +202,7 @@ int main()
     //6)
     auto buyCar = buySecondHandCar(4, 'r', 2222.22f, 'm', 5678.78, true);
     //7)
-    auto braggingRights = fishing(22, 67.89f, true, 8.96f);
+    auto braggingRights = goFishing(22, 67.89f, true, 8.96f);
     //8)
     bool happyParent = isTheBabySleeping(10.3f, false, 2, false);
     //9)
