@@ -93,7 +93,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-float marathonFinishTime(int numberOfTrianingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
+float timeRunningMarathon(int numberOfTrianingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
 {
     ignoreUnused(numberOfTrianingSessions, numberOfTrainingMiles, newRunningShoes);
     return {};
@@ -101,7 +101,7 @@ float marathonFinishTime(int numberOfTrianingSessions, float numberOfTrainingMil
 /*
  2)
  */
-bool married(bool havePartner, float yearsTogether, bool proposed = true, double venueCost = 5555.55)
+bool becomeMarried(bool havePartner, float yearsTogether, bool proposed = true, double venueCost = 5555.55)
 {
     ignoreUnused(havePartner, yearsTogether, proposed, venueCost);
     return {};
@@ -109,7 +109,7 @@ bool married(bool havePartner, float yearsTogether, bool proposed = true, double
 /*
  3)
  */
-double schoolPerformance(int students, float averageGrade, int teachers = 51, bool sportsProgramme = true)
+double calculateSchoolPerformance(int students, float averageGrade, int teachers = 51, bool sportsProgramme = true)
 {
     ignoreUnused(students, averageGrade, teachers, sportsProgramme);
     return {};
@@ -117,7 +117,7 @@ double schoolPerformance(int students, float averageGrade, int teachers = 51, bo
 /*
  4)
  */
-float restaurantBillShare(int numberOfDiners =12, float foodCost = 1234.56f, float drinkCost = 569.99f, bool serviceGood = false, char country = 'e', double acceptableTip = 0.075)
+float calculateShareOfRestaurantBill(int numberOfDiners =12, float foodCost = 1234.56f, float drinkCost = 569.99f, bool serviceGood = false, char country = 'e', double acceptableTip = 0.075)
 {
     ignoreUnused(numberOfDiners, foodCost, drinkCost, serviceGood, country, acceptableTip);
     return {};
@@ -125,7 +125,7 @@ float restaurantBillShare(int numberOfDiners =12, float foodCost = 1234.56f, flo
 /*
  5)
  */
-double stressLevel(bool doSport = false, int numberOfChildren = 5, bool didSchoolRun = true, double income = 45678.23, bool happyWithJob = false, int numberOfFriends = 4)
+double calculateStressLevel(bool doSport = false, int numberOfChildren = 5, bool didSchoolRun = true, double income = 45678.23, bool happyWithJob = false, int numberOfFriends = 4)
 {
     ignoreUnused(doSport, numberOfChildren, didSchoolRun, income, happyWithJob, numberOfFriends);
     return {};
@@ -149,7 +149,7 @@ bool winFishingCompetition(int fishCaught, float totalWeightCaught, bool biggest
 /*
  8)
  */
-void babyBedTime(float timeInbath, bool pyjamasOn = true, int numberOfStoires = 3, bool nightLightOn = true)
+bool IsTheBabyAsleep(float timeInbath, bool pyjamasOn = true, int numberOfStoires = 3, bool nightLightOn = true)
 {
     ignoreUnused(timeInbath, pyjamasOn, numberOfStoires, nightLightOn);
 }
@@ -164,7 +164,7 @@ bool makeFishAndChips(float fishWeight, int numberOfChips = 30, bool salt = true
 /*
  10)
  */
-float jewelleryValue(int numberOfRing = 5, int numberOfNecklaces = 3, int numberOfBraclets = 1, bool gold = true, bool silver = false, float totalWeightRings = 34.56f, float totalWeightNecklaces = 11.11f, float totalWeightBraclets = 9.87f)
+float CalculateJewelleryValue(int numberOfRing = 5, int numberOfNecklaces = 3, int numberOfBraclets = 1, bool gold = true, bool silver = false, float totalWeightRings = 34.56f, float totalWeightNecklaces = 11.11f, float totalWeightBraclets = 9.87f)
 {
     ignoreUnused(numberOfRing, numberOfNecklaces, numberOfBraclets, gold, silver, totalWeightRings, totalWeightNecklaces, totalWeightBraclets);
     return {};
@@ -189,27 +189,27 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto poistionAfterRace = marathonFinishTime(56, 678.91f, true);
+    auto poistionAfterRace = timeRunningMarathon(56, 678.91f, true);
     //2)
-    auto ballAndChain = married(true, 5.7f, true, 8967.78);
+    auto ballAndChain = becomeMarried(true, 5.7f, true, 8967.78);
     //3)
-    auto schoolLeaugueTablePosition = schoolPerformance(1103, 3.67f, 66, false);
+    auto schoolLeaugueTablePosition = calculateSchoolPerformance(1103, 3.67f, 66, false);
     //4)
-    auto myShareOfFoodBill = restaurantBillShare(8, 555.55f, 890.76f, true, 'i', 0.125);
+    auto myShareOfFoodBill = calculateShareOfRestaurantBill(8, 555.55f, 890.76f, true, 'i', 0.125);
     //5)
-    auto heartAttackRisk = stressLevel(true, 1, false, 98789.76, true, 35);
+    auto heartAttackRisk = calculateStressLevel(true, 1, false, 98789.76, true, 35);
     //6)
     auto buyCar = buySecondHandCar(4, 'r', 2222.22f, 'm', 5678.78, true);
     //7)
     auto braggingRights = winFishingCompetition(22, 67.89f, true, 8.96f);
     //8)
-    babyBedTime(10.3f, false, 2, false);
+    bool happyParent = IsTheBabyAsleep(10.3f, false, 2, false);
     //9)
     auto succesfulFridayNight = makeFishAndChips(200.45f, 40, true, 10.3f, true);
     //10)
-    auto insuranceValue = jewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
+    auto insuranceValue = CalculateJewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
     
-    ignoreUnused(carRented, poistionAfterRace, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, babyBedTime, succesfulFridayNight, insuranceValue);
+    ignoreUnused(carRented, timeRunningMarathon, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, happyParent, succesfulFridayNight, insuranceValue);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
