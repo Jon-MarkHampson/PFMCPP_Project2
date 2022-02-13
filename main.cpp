@@ -93,9 +93,9 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-float timeRunningMarathon(int numberOfTrianingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
+float timeRunningMarathon(int numberOfTrainingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
 {
-    ignoreUnused(numberOfTrianingSessions, numberOfTrainingMiles, newRunningShoes);
+    ignoreUnused(numberOfTrainingSessions, numberOfTrainingMiles, newRunningShoes);
     return {};
 }
 /*
@@ -149,7 +149,7 @@ bool fishing(int fishCaught, float totalWeightCaught, bool biggestCatchOfTheDay 
 /*
  8)
  */
-bool IsTheBabySleeping(float timeInbath, bool pyjamasOn = true, int numberOfStories = 3, bool nightLightOn = true)
+bool isTheBabySleeping(float timeInbath, bool pyjamasOn = true, int numberOfStories = 3, bool nightLightOn = true)
 {
     ignoreUnused(timeInbath, pyjamasOn, numberOfStories, nightLightOn);
     return {};
@@ -165,7 +165,7 @@ bool eatingFishAndChips(float fishWeight, int numberOfChips = 30, bool salt = tr
 /*
  10)
  */
-float CalculateJewelleryValue(int numberOfRing = 5, int numberOfNecklaces = 3, int numberOfBraclets = 1, bool gold = true, bool silver = false, float totalWeightRings = 34.56f, float totalWeightNecklaces = 11.11f, float totalWeightBraclets = 9.87f)
+float calculateJewelleryValue(int numberOfRing = 5, int numberOfNecklaces = 3, int numberOfBraclets = 1, bool gold = true, bool silver = false, float totalWeightRings = 34.56f, float totalWeightNecklaces = 11.11f, float totalWeightBraclets = 9.87f)
 {
     ignoreUnused(numberOfRing, numberOfNecklaces, numberOfBraclets, gold, silver, totalWeightRings, totalWeightNecklaces, totalWeightBraclets);
     return {};
@@ -204,11 +204,11 @@ int main()
     //7)
     auto braggingRights = fishing(22, 67.89f, true, 8.96f);
     //8)
-    bool happyParent = IsTheBabySleeping(10.3f, false, 2, false);
+    bool happyParent = isTheBabySleeping(10.3f, false, 2, false);
     //9)
     auto succesfulFridayNight = eatingFishAndChips(200.45f, 40, true, 10.3f, true);
     //10)
-    auto insuranceValue = CalculateJewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
+    auto insuranceValue = calculateJewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
     
     ignoreUnused(carRented, positionAfterRace, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, happyParent, succesfulFridayNight, insuranceValue);
     std::cout << "good to go!" << std::endl;
