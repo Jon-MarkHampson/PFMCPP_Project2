@@ -93,7 +93,7 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
 /*
  1)
  */
-float timeRunningMarathon(int numberOfTrainingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
+float computeTimeRunningMarathon(int numberOfTrainingSessions, float numberOfTrainingMiles = 523.87f, bool newRunningShoes = true)
 {
     ignoreUnused(numberOfTrainingSessions, numberOfTrainingMiles, newRunningShoes);
     return {};
@@ -190,7 +190,7 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
-    auto positionAfterRace  = timeRunningMarathon(34, 555.55f, true);
+    auto timeTakenRunningMarathon  = computeTimeRunningMarathon(34, 555.55f, true);
     //2)
     auto ballAndChain = becomingMarried(true, 5.7f, true, 8967.78);
     //3)
@@ -210,7 +210,7 @@ int main()
     //10)
     auto insuranceValue = calculateJewelleryValue(3, 6, 2, false, true, 22.45f, 10.43f, 8.12f);
     
-    ignoreUnused(carRented, positionAfterRace, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, happyParent, succesfulFridayNight, insuranceValue);
+    ignoreUnused(carRented, timeTakenRunningMarathon, ballAndChain, schoolLeaugueTablePosition, myShareOfFoodBill, heartAttackRisk, buyCar, braggingRights, happyParent, succesfulFridayNight, insuranceValue);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
